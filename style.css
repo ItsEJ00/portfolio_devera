@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: white
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: #000;
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 2rem;
+    border: 3px solid #fff;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.about {
+    background-color: #111;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact {
+    background-color: #000;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+}
